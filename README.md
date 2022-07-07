@@ -1,2 +1,2 @@
-# Hava - Humble and Awesome Vocabulary Accumulation
+# Hava - Humble but Awesome Vocabulary Accumulation
 ![logo](/assets/hava_logo.png)
