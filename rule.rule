@@ -1,0 +1,89 @@
+language: polish
+wordtypes:
+	nouns:
+		gender: {
+			"m",
+			"f",
+			"n"
+		}
+		case: {
+		      "nom",
+		      "gen",
+		      "dat",
+		      "acc",
+		      "loc",
+		      "inst",
+		      "voc"
+		}
+		person: {
+			"sg",
+			"pl"
+		}
+	verbs:
+		class: {
+		      "1",
+		      "2",
+		      "3"
+		}
+
+	prepositions:
+		case: {
+		      "gen",
+		      "dat",
+		      "acc",
+		      "loc",
+		      "inst"
+		      
+		}
+	conjunctions:
+		case: {
+		      ""
+		}
+	pronouns:
+		person: {
+			"1_sg",
+			"2_sg",
+			"3_sg",
+			"1_pl",
+			"2_pl",
+			"3_pl"
+		}
+		case: {
+		      "gen",
+		      "dat",
+		      "acc",
+		      "loc",
+		      "inst"
+		      
+		}
+		gender: {
+			"m",
+			"f",
+			"n",
+			"none"
+		}
+	adjectives:
+		gender: {
+			"m",
+			"f",
+			"n"
+		}
+		case: {
+		      "nom",
+		      "gen",
+		      "dat",
+		      "acc",
+		      "loc",
+		      "inst",
+		      "voc"
+		}
+		person: {
+			"sg",
+			"pl"
+		}
+		
+	
+		
+		
+	
+

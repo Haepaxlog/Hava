@@ -26,6 +26,5 @@ pub fn build(b: *std.build.Builder) void {
     run_step.dependOn(&run_cmd.step);
 
     exe.linkSystemLibrary("c");
-
     exe.linkSystemLibrary("readline");
 }
