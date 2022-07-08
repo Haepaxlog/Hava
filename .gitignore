@@ -1,4 +1,4 @@
 ./SECRET
-./zig-cache
-./zig-out
+/zig-cache
+/zig-out
 ./rule.rule
