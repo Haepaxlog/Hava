@@ -1,5 +1,5 @@
-./SECRET
-/zig-cache
-/zig-out
-./rule.rule
-./#*
+SECRET
+zig-cache/
+zig-out/
+rule.rule
+*\#*

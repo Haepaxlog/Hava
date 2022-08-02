@@ -11,7 +11,18 @@ pub fn build(b: *std.build.Builder) void {
     // between Debug, ReleaseSafe, ReleaseFast, and ReleaseSmall.
     const mode = b.standardReleaseOptions();
 
+    const cflags = [_][]const u8{};
+
+    const autocomplete = b.addStaticLibrary("autocomplete", null);
+    autocomplete.addIncludeDir("./src/c/");
+    autocomplete.addCSourceFile("./src/c/autocomplete.c", &cflags);
+    autocomplete.setBuildMode(mode);
+    autocomplete.install();
+    autocomplete.linkSystemLibrary("c");
+    autocomplete.linkSystemLibrary("readline");
+
     const exe = b.addExecutable("hava", "src/main.zig");
+    exe.addIncludeDir("./src/c/");
     exe.setTarget(target);
     exe.setBuildMode(mode);
     exe.install();
@@ -28,4 +39,5 @@ pub fn build(b: *std.build.Builder) void {
     exe.linkSystemLibrary("c");
 
     exe.linkSystemLibrary("readline");
+    exe.linkLibrary(autocomplete);
 }
